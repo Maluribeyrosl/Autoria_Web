@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema: Djavan</title>
+
+    <!-- Link do Bootstrap -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet">
+
+    <style>
+        /* Paleta inspirada no Djavan: tons tropicais e suaves */
+        body {
+            background: linear-gradient(to bottom, #f1efe7, #dce8e4);
+        }
+
+        .header-djavan {
+            background-color: #3b5f5f;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .header-djavan h1 {
+            font-family: "Georgia", serif;
+            font-weight: bold;
+        }
+
+        .card-musica {
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .card-musica:hover {
+            transform: scale(1.03);
+        }
+
+        /* Media Query personalizada */
+        @media (max-width: 600px) {
+            .header-djavan h1 {
+                font-size: 24px;
+            }
+            .header-djavan p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header-djavan text-center">
+        <h1>Djavan Caetano Viana</h1>
+        <p>“Sabe lá / O que é não ter e ter que ter pra dar?”</p>
+
+        <!-- Foto do Djavan centralizada -->
+        <img 
+            src="Djavannnn.jpg"
+            alt="Foto do cantor Djavan"
+            class="img-fluid mx-auto d-block"
+            style="max-width: 280px; border-radius: 20px; margin-top: 20px;">
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="container py-5">
+
+        <h2 class="text-center mb-4">Músicas Destaque:</h2>
+
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4 col-sm-12">
+                <div class="card card-musica shadow">
+                    <img src="Oceano.jpg" 
+                         class="card-img-top" alt="Capa da canção Oceano">
+                    <div class="card-body">
+                        <h5 class="card-title">Oceano</h5>
+                        <p class="card-text">Um dos maiores clássicos de Djavan, marcado por sua poesia e intensidade emocional.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 col-sm-12">
+                <div class="card card-musica shadow">
+                    <img src="Lilás.jpg"
+                         class="card-img-top" alt="Capa canção Lilás">
+                    <div class="card-body">
+                        <h5 class="card-title">Lilás</h5>
+                        <p class="card-text">Suavidade, romantismo e arranjos que marcaram a música popular brasileira...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 col-sm-12">
+                <div class="card card-musica shadow">
+                    <img src="Coisa De Acender.jpg" alt="Capa da Canção Se...">
+                    <div class="card-body">
+                        <h5 class="card-title">Se...</h5>
+                        <p class="card-text">Música que mistura poesia e metáforas, uma marca registrada do cantor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
